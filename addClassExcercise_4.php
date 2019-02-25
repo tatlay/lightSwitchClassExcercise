@@ -18,18 +18,22 @@ class Address
 		return "{$this->street}{$this->postCode}{$this->town}";
 	}
 
-	public function setStreet()
+	public function setStreet($street)
 	{
+		$this->street = $street;
 		return $this;
 	}
 
-	public function setPostcode()
+	public function setPostcode($postCode)
 	{
-		return $this;
-	}
 	
-	public function setTown()
+		$this->postCode = $postCode;
+		return $this;
+	}	
+
+	public function setTown($town)
 	{
+		$this->town = $town;
 		return $this;
 	}
 
